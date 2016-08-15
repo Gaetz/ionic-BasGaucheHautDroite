@@ -1,0 +1,45 @@
+<ion-view view-title="Meme Battle Emetteur" ng-controller="EmiterController as ctrl" class="light-grey">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Emetteur</h1>
+    </ion-header-bar>
+  <ion-content class="content">
+
+			
+			<div class="row">
+			  <div class="col"><button class="button button-full icon ion-arrow-up-a" ng-click="ctrl.sendUp()"></button></div>
+			</div>				
+			
+				<div class="row">
+				  <div class="col col-33">
+						<button class="button button-full icon ion-arrow-left-a" ng-click="ctrl.sendLeft()"></button>
+					</div>
+				  <div class="col col-33"><button class="button button-full icon ion-arrow-down-a" ng-click="ctrl.sendDown()"></button></div>
+				  <div class="col col-33"><button class="button button-full icon ion-arrow-right-a" ng-click="ctrl.sendRight()"></button></div>
+			</div>
+			
+			<div class="row">
+			  <div class="col col-50">
+		      <button class="button button-full icon ion-android-hand" ng-click="ctrl.sendCatch()"> 
+						Attrape
+					</button>
+			  </div>
+			  <div class="col col-50">
+		      <button class="button button-full icon ion-pause" ng-click="ctrl.sendStop()"> 
+						Stop
+					</button>
+			  </div>
+			</div>
+			
+			<div class="row">
+			  <div class="col">
+      <button class="button button-full button-positive" ng-click="ctrl.quit()"> 
+				Quitter
+			</button>
+				</div>		
+			</div>
+      
+
+
+
+  </ion-content>
+</ion-view>

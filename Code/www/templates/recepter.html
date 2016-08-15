@@ -1,0 +1,30 @@
+<ion-view view-title="Meme Battle Emetteur" ng-controller="RecepterController as ctrl" class="light-grey">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Recepteur</h1>
+    </ion-header-bar>
+  <ion-content class="content">
+
+			<div class="row"><div class="col">&nbsp;</div></div>
+
+			<div class="row">
+			  <div class="col">
+					<center><img src="img/casque.jpg"></img></center>
+				</div>		
+			</div>
+			
+			<div class="row">
+			  <div class="col">
+					<center><h3>{{ctrl.order}}</h3></center>
+				</div>		
+			</div>
+			
+			<div class="row">
+			  <div class="col">
+      <button class="button button-full button-positive" ng-click="ctrl.quit()"> 
+				Quitter
+			</button>
+				</div>		
+			</div>
+
+  </ion-content>
+</ion-view>

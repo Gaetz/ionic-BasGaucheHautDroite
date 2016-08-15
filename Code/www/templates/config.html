@@ -1,0 +1,44 @@
+ <ion-view ng-controller="ConfigController as config">
+    <ion-pane>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Mème Battle</h1>
+      </ion-header-bar>
+			
+      <ion-content>
+			
+				<center><img src="img/icone_BGHD_pt.jpg"></img></center>
+			
+			<div class="row"><div class="col"> <center><h2>Clan</h2></center> <ion-list>
+			<ion-radio ng-model="config.clan" ng-value="1" name="clan">Chuck Norris</ion-radio>
+			<ion-radio ng-model="config.clan" ng-value="2" name="clan">Grumpy cats</ion-radio>
+			<ion-radio ng-model="config.clan" ng-value="3" name="clan">Bob l'éponge</ion-radio>
+			</ion-list> </div></div>
+		
+		<div class="row"><div class="col">
+				<center><h2>Equipe</h2></center>
+				<ion-list>
+				  <ion-radio ng-model="config.team" ng-value="1" name="team">1</ion-radio>
+				  <ion-radio ng-model="config.team" ng-value="2" name="team">2</ion-radio>
+				  <ion-radio ng-model="config.team" ng-value="3" name="team">3</ion-radio>
+				  <ion-radio ng-model="config.team" ng-value="4" name="team">4</ion-radio>
+				  <ion-radio ng-model="config.team" ng-value="5" name="team">5</ion-radio>
+				</ion-list>
+				</div></div>
+		
+		<div class="row"><div class="col">
+				<center><h2>Role</h2></center>	
+				<ion-list>
+				  <ion-radio ng-model="config.role" ng-value="1" name="role">Emetteur</ion-radio>
+				  <ion-radio ng-model="config.role" ng-value="2" name="role">Recepteur</ion-radio>
+				</ion-list>
+				</div></div>
+		
+		<div class="row">
+			<div class="col"> 
+				<center><button type="button" class="button
+		button-positive button-full" ng-click="config.register()"> Démarrer </button></center>
+		</div>
+	</div> 
+</ion-content> 
+</ion-pane> 
+</ion-view>
